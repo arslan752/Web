@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.login, .signup, .passwordlost{
+	padding:15% 0%;
+	display:block;
+}
+.login img, .signup img, .passwordlost img {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.login-form, .signup-form, .passwordlost-form{
+	vertical-align:middle;
+	padding:20px;
+	margin:auto;
+	width:310px;
+}
+.login-form a, .signup-form a, passwordlost-form a{
+	text-decoration:none;
+	font-size:13px;
+}
+.login-form a:hover, .signup-form a:hover, .passwordlost-form a{
+	text-decoration:none;
+	font-size:13px;
+}
+.login-form label, .signup-form label, .passwordlost-form label{
+	font-weight:normal;
+}
+.login-form-fields, .signup-form-fields, .passwordLost-form-fields{
+	padding:8px 10px;
+	font-size:15px;
+	font-weight:bold;
+	width:100%;
+}
+.login-form-fields:focus, .signup-form-fields:focus, .passwordLost-form-fields:focus{
+	padding:8px 10px;
+	font-size:15px;
+	font-weight:bold;
+	width:100%;
+}
+.login-form input[type="submit"], .signup-form input[type="submit"], .passwordlost-form input[type="submit"]{
+	padding:8px 18px;
+	font-size:12px;
+	float:right;
+	font-weight:bold;
+}

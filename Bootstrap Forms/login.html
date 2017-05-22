@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+
+
+</head>
+
+<body>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-2 hidden-xs">
+            </div>
+        	<div class="col-md-8">
+            	<div class="login">
+                    <img src="assets/image/Symbol.png" width="120"/>
+                	<div class="login-form">
+						<form id="loginForm">
+                            <div class="form-group">
+                                <label>Email</label><br />
+                                <input type="text" class="login-form-fields input-lg" name="email" id="email" maxlength="60" />
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label><br />
+                                <input type="password" class="login-form-fields" name="password" id="password" maxlength="60" />
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" checked="checked" /> <label class="label-remember">Remember me</label>
+                                <input type="submit" value="Login" name="submit" />
+                            </div>
+                            <div class="form-group">
+                                <a href="password-lost.html">Lost your password?</a><br />
+                                <a href="signup.html">Don't have ID?</a>
+                            </div>
+						</form>
+                        <script>
+	
+
+		// validate signup form on keyup and submit
+/*						jQuery.validator.setDefaults({
+						  debug: true,
+						  success: "valid"
+						});*/
+						$( "#loginForm" ).validate({
+						  rules: {
+							 email: {
+      								required: true,
+									email:true
+    						},
+							password: {
+      								required: true
+    						}
+						  }
+						});
+
+				</script>
+					</div>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-xs">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Signup</title>
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/theme.css" />
+
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-2 hidden-xs">
+            </div>
+        	<div class="col-md-8">
+            	<div class="signup">
+                    <img src="assets/image/Symbol.png" width="120"/>
+                	<div class="signup-form">
+						<form id="SignUpForm" >
+                        	<div class="form-group">
+                                <label for="name">Name</label><br />
+                                <input type="text" class="signup-form-fields input-lg" name="name" id="name" maxlength="60" />
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Email</label><br />
+                                <input type="text" class="signup-form-fields input-lg" name="email" id="email" maxlength="60" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label><br />
+                                <input type="password" class="signup-form-fields" name="password" id="password" maxlength="60" />
+                            </div>
+                            <div class="form-group">
+                                <a href="login.html">Already have ID?</a>
+                                <input type="submit" value="Signup" name="submit"/>
+                            </div>
+						</form>
+                        <script>
+						// validate signup form on keyup and submit
+						$( "#SignUpForm" ).validate({
+							  rules: {
+								   name: {
+										required: true
+								},
+								 email: {
+										required: true,
+										email:true
+								},
+								password: {
+										required: true
+								}
+							  }
+						});
+
+					</script>
+					</div>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-xs">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

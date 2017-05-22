@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#f1f1f1;			
+}
+.login-form, .signup-form, .passwordlost-form{
+	background-color:#fff;
+}
+.login-form a, .signup-form a, .passwordlost-form a{
+	color:#000;
+}
+.login-form a:hover, .signup-form a:hover, .passwordlost-form a:hover{
+	color:#007ab9;
+}
+.login-form label, .signup-form label, .passwordlost-form label{
+	color:#000;
+}
+.login-form-fields:focus, .signup-form-fields:focus, .passwordLost-form-fields:focus{
+	border:2px solid #007ab9;
+}
+.login-form input[type="submit"], .signup-form input[type="submit"]{
+	background-color:#007ab9;
+	color:#fff;
+}
+.passwordlost-form input[type="submit"]{
+	background-color:#007ab9;
+	color:#fff;
+}
+.login-form, .login-form-fields, .signup-form, .signup-form-fields, .passwordLost-form, .passwordLost-form-fields{
+	border:2px solid #d5d1d1;
+}
